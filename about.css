@@ -1,0 +1,177 @@
+.about-section{
+    width:100%;
+    padding:80px 8%;
+    background:#071B37;
+}
+
+/* ================= CARDS ================= */
+
+.about-card,
+.services,
+.cta{
+    background:#102C57;
+    border:1px solid rgba(212,175,55,.35);
+    border-radius:25px;
+    padding:40px;
+    margin-bottom:40px;
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+    transition:.35s;
+}
+
+.about-card:hover,
+.services:hover,
+.cta:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 40px rgba(212,175,55,.18);
+}
+
+/* ================= TITRES ================= */
+
+.about-card h2,
+.services h2,
+.cta h2{
+    text-align:center;
+    color:#D4AF37;
+    font-size:35px;
+    margin-bottom:30px;
+}
+
+/* ================= PARAGRAPHES ================= */
+
+.about-card p,
+.cta p{
+    color:#fff;
+    font-size:25px;
+    line-height:1.8;
+    text-align:center;
+    margin-top:20px;
+}
+
+/* ================= IMAGE ================= */
+
+.about-card img{
+    width:100%;
+    max-width:700px;
+    height:350px;
+    object-fit:cover;
+    display:block;
+    margin:0 auto 30px;
+    border-radius:20px;
+    transition:.4s;
+}
+
+.about-card img:hover{
+    transform:scale(1.03);
+}
+
+/* ================= LISTE ================= */
+
+.about-card ol{
+    list-style: none;
+    width:80%;
+    margin:20px auto 0;
+}
+
+.about-card ol li{
+    text-decoration: none;
+    color:#fff;
+    font-size:25px;
+    margin:18px 0;
+    padding:15px 20px;
+    background:rgba(255,255,255,.05);
+    border-left:5px solid #D4AF37;
+    border-radius:12px;
+}
+
+/* ================= SERVICES ================= */
+
+.services{
+    text-align:center;
+}
+
+.services a{
+    text-decoration:none;
+}
+
+.services button{
+    width:220px;
+    height:60px;
+    margin:15px;
+    border:none;
+    border-radius:15px;
+    background:#D4AF37;
+    color:#071B37;
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.35s;
+}
+
+.services button:hover{
+    transform:translateY(-5px);
+    background:#E8C55A;
+    box-shadow:0 10px 25px rgba(212,175,55,.45);
+}
+
+/* ================= CTA ================= */
+
+.cta{
+    text-align:center;
+}
+.cta p{
+    font-size:25px;
+}
+.cta button{
+    margin-top:30px;
+    width:250px;
+    height:60px;
+    border:none;
+    border-radius:15px;
+    background:#D4AF37;
+    color:#071B37;
+    font-size:18px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.35s;
+}
+
+.cta button:hover{
+    transform:translateY(-5px);
+    background:#E8C55A;
+    box-shadow:0 10px 25px rgba(212,175,55,.45);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+    .about-section{
+        padding:60px 20px;
+    }
+
+    .about-card,
+    .services,
+    .cta{
+        padding:25px;
+    }
+
+    .about-card h2,
+    .services h2,
+    .cta h2{
+        font-size:28px;
+    }
+
+    .about-card img{
+        height:220px;
+    }
+
+    .about-card ol{
+        width:100%;
+    }
+
+    .services button,
+    .cta button{
+        width:100%;
+        margin:10px 0;
+    }
+}

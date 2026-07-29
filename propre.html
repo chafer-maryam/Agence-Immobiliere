@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espace Propriétaire - Agence Immobilière</title>
+    <link rel="stylesheet" href="propre.css">
+    <link rel="stylesheet" href="Immo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">  <!--Elle sert uniquement à contenir les liens principaux qui permettent de naviguer sur le site (les menus).*/-->
+        <div class="navbar_container">
+            <a href="Immo.html" class="navbar_logo"><img src="logo.png"></a>
+            <button class="navbar_toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="navbar_menu">
+                <li><a href="Immo.html">Acceuil</a></li>    <!-- class="acitve"*/-->
+                <li><a href="acheter.html">Vente</a></li>
+                <li><a href="alouer.html">Location</a></li>
+                <li><a href="propre.html">Propriétaire</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">Á propos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+<!-- ================= ACTION ================= -->
+
+<section class="quick-action">
+
+    <a href="ajouter-bien.html" class="btn-add">
+        <i class="fa-solid fa-plus"></i>
+        Ajouter un bien
+    </a>
+
+</section>
+
+<!-- ================= TABLE ================= -->
+
+<section class="table-section">
+
+    <h2>Mes derniers biens</h2>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Titre</th>
+                <th>Ville</th>
+                <th>Prix</th>
+                <th>Statut</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <!-- Bien 1 -->
+
+            <tr>
+
+                <td>
+                    <img src="villa1.jpg" alt="Villa" width="90">
+                </td>
+
+                <td>Villa Moderne</td>
+
+                <td>Agadir</td>
+
+                <td>2 500 000 DH</td>
+
+                <td>
+                    <span class="accepted">Accepté</span>
+                </td>
+
+                <td>
+
+                    <a href="#" class="action-btn" title="Voir">
+                        <i class="fa-solid fa-eye"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" title="Modifier">
+                        <i class="fa-solid fa-pen"></i>
+                    </a>
+
+                    <a href="#" class="action-btn delete" title="Supprimer">
+                        <i class="fa-solid fa-trash"></i>
+                    </a>
+
+                </td>
+
+            </tr>
+
+            <!-- Bien 2 -->
+
+            <tr>
+
+                <td>
+                    <img src="appa1.jpg" alt="Appartement" width="90">
+                </td>
+
+                <td>Appartement Luxe</td>
+
+                <td>Casablanca</td>
+
+                <td>1 800 000 DH</td>
+
+                <td>
+                    <span class="pending">En attente</span>
+                </td>
+
+                <td>
+
+                    <a href="#" class="action-btn" title="Voir">
+                        <i class="fa-solid fa-eye"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" title="Modifier">
+                        <i class="fa-solid fa-pen"></i>
+                    </a>
+
+                    <a href="#" class="action-btn delete" title="Supprimer">
+                        <i class="fa-solid fa-trash"></i>
+                    </a>
+
+                </td>
+
+            </tr>
+
+            <!-- Bien 3 -->
+
+            <tr>
+
+                <td>
+                    <img src="bur1.jpg" alt="Terrain" width="90">
+                </td>
+
+                <td>Bureau</td>
+
+                <td>Marrakech</td>
+
+                <td>850 000 DH</td>
+
+                <td>
+                    <span class="refused">Refusé</span>
+                </td>
+
+                <td>
+
+                    <a href="#" class="action-btn" title="Voir">
+                        <i class="fa-solid fa-eye"></i>
+                    </a>
+
+                    <a href="#" class="action-btn" title="Modifier">
+                        <i class="fa-solid fa-pen"></i>
+                    </a>
+
+                    <a href="#" class="action-btn delete" title="Supprimer">
+                        <i class="fa-solid fa-trash"></i>
+                    </a>
+
+                </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</section>
+    
+<!--==================== FOOTER ====================-->
+
+<footer class="footer">
+    <div class="footer-container">
+        <!-- ABOUT -->
+        <div class="footer-box">
+            <a href="Immo.html" class="navbar_logo"><img src="logo.png"></a>
+            <p>
+                Votre partenaire de confiance pour acheter,
+                vendre et louer des biens immobiliers partout au Maroc.
+            </p>
+
+        </div>
+        <!-- NAVIGATION -->
+        <div class="footer-box">
+            <h3>Navigation</h3>
+
+            <ul>
+                <li>
+                    <a href="Immo.html">Accueil</a>
+                </li>
+                <li>
+                    <a href="acheter.html">Vente</a>
+                </li>
+                <li>
+                    <a href="louer.html">Location</a>
+                </li>
+                <li>
+                    <a href="propre.html">Propriétaire</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="about.html">Àpropos</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- CONTACT -->
+        <div class="footer-box">
+            <h3>Contact</h3>
+            <div class="contact-links">
+                <a href="https://maps.google.com/?q=Rue+Hay+Ryad+Agadir" target="_blank">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Rue Hay Ryad, Agadir</span>
+                </a>
+
+                <a href="tel:+212600001111">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+212 600 00 11 11</span>
+                </a>
+
+                <a href="mailto:contact@tigmiⵎⵇⵓⵔⵏ.ma">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>contact@ⵎⵇⵓⵔⵏ.ma</span>
+                </a>
+            </div>
+
+        </div>
+        <!-- SOCIAL -->
+        <div class="footer-box">
+            <h3>Suivez-nous</h3>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="https://instagram.com" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://wa.me/212600001111" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a href="https://linkedin.com" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>
+            © 2026 <span>TIGMI ⵎⵇⵓⵔⵏ</span> | Tous droits réservés.
+        </p>
+    </div>
+</footer>
+
+
+<script src="Immo.js"></script>
+</body>
+</html>

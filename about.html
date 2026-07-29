@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>navbar</title>
     <link rel="stylesheet" href="Immo.css">
+    <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
-     <nav class="navbar">  <!--Elle sert uniquement à contenir les liens principaux qui permettent de naviguer sur le site (les menus).*/-->
+    <nav class="navbar">
+        <!--Elle sert uniquement à contenir les liens principaux qui permettent de naviguer sur le site (les menus).*/-->
         <div class="navbar_container">
             <a href="Immo.html" class="navbar_logo"><img src="logo.png"></a>
             <button class="navbar_toggle">
@@ -19,85 +21,56 @@
                 <span class="bar"></span>
             </button>
             <ul class="navbar_menu">
-                <li><a href="Immo.html">Acceuil</a></li>    <!-- class="acitve"*/-->
-                <li><a href="acheter.html">Vente</a></li>
-                <li><a href="alouer.html">Location</a></li>
+                <li><a href="Immo.html">Acceuil</a></li> <!-- class="acitve"*/-->
+                <li><a href="acheter.html">Acheter</a></li>
+                <li><a href="alouer.html">Alouer</a></li>
                 <li><a href="propre.html">Propriétaire</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="about.html">Á propos</a></li>
             </ul>
         </div>
     </nav>
-    <section class="hero">
-    <div class="slider">
-        <img src="villa1.jpg" class="slide active">
-        <img src="villa2.jpg" class="slide">
-        <img src="villa3.jpg" class="slide">
-        <img src="villa4.jpg" class="slide">
-    </div>
-    <div class="overlay"></div>
-    <div class="hero-content">
-        <h1>Trouvez le bien immobilier de vos rêves</h1>
-        <div class="filter-box">
-            <select>
-                <option>Ville</option>
-                <option>Agadir</option>
-                <option>Marrackech</option>
-                <option>Tanger</option>
-                <option>Casablanca</option>
-                <option>Rabat</option>
-            </select>
-            <select>
-                <option>Type</option>
-                <option>Villa</option>
-                <option>Appartemant</option>
-                <option>Maison</option>
-                <option>Bureauu</option>
-                <option>Terrain</option>
-            </select>
-            <input type="number" placeholder="Budget">
-            <button>
-                <i class="fa-solid fa-magnifying-glass"></i>
-                Rechercher
-            </button>
+
+    <section class="about-section">
+        <div class="about-card">
+            <h2>QUI SOMMES-NOUS ?</h2>
+            <img src="villa2.jpg" alt="villa">
+            <p>TIGMI ⵎⵇⵓⵔⵏ est une agence immobilière qui vous accompagne dans tous vos
+                projets d'achat, de location et de vente. Notre mission est de vous
+                aider à trouver le bien idéal avec professionnalisme, transparence et
+                confiance.</p>
         </div>
-    </div>
-</section>
-    
-<section class="presentation">
-     <div class="presentation-content">
-        <h3>Parce que chaque projet immobilier mérite le meilleur accompagnement.</h3>
 
-        <p>
-            Nous vous accompagnons dans l'achat, la vente et la location de villas,
-            d'appartements, de maisons, de bureaux et de terrains.
-            Notre priorité est de vous offrir un service transparent,
-            un accompagnement personnalisé et une sélection de biens répondant
-            aux plus hauts standards de qualité.
-            Avec <span>TIGMI ⵎⵇⵓⵔⵏ </span>, trouvez le bien qui correspond à vos besoins
-            et concrétisez votre projet immobilier en toute sérénité.
-        </p>
+        <div class="about-card">
+            <h2>POURQUOI NOUS CHOISIR ?</h2>
+            <ol>
+                <li>On vous propose des biens vérifiés </li>
+                <li>Accompagnement personnalisé et gaide complet</li>
+                <li>Transparence et confiance</li>
+            </ol>
+        </div>
 
-        <a href="about.html" class="about-btn">
-            En savoir plus
-        </a>
+        <div class="services">
+            <h2>NOS SERVICES</h2>
+            <a href="acheter.html">
+                <button>Vente</button>
+            </a>
+            <a href="louer.html">
+                <button>Location</button>
+            </a>
+            <a href="propre.html">
+                <button>Propriétaire</button>
+            </a>
+        </div>
 
-    </div>
+        <div class="cta">
+            <h2>VOUS AVEZ UN PROJET IMMOBILIER ? </h2>
+            <p>Nous sommes là pour vous accompagner dans votre projet.</p>
+            <a href="contact.html"><button>CONTACTEZ-NOUS</button></a>
+        </div>
+    </section>
 
-    <div class="presentation-slider">
-
-        <img src="bur1.jpg" class="slide-presentation active" alt="Bureau">
-        <img src="salon.jpg" class="slide-presentation" alt="Salon Marocain">
-        <img src="appa2.jpg" class="slide-presentation" alt="Appartement">
-
-    </div>
-
-   
-
-</section>
-
-    
-<footer class="footer">
+    <footer class="footer">
     <div class="footer-container">
         <!-- ABOUT -->
         <div class="footer-box">
@@ -149,7 +122,7 @@
                     <span>+212 600 00 11 11</span>
                 </a>
 
-                <a href="mailto:contact@immomarie.ma">
+                <a href="mailto:contact@tigmiⵎⵇⵓⵔⵏ.ma">
                     <i class="fa-solid fa-envelope"></i>
                     <span>contact@tigmiⵎⵇⵓⵔⵏ.ma</span>
                 </a>

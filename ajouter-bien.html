@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter un bien | ImmoMarie</title>
+    <link rel="stylesheet" href="ajouter-bien.css">
+    <link rel="stylesheet" href="Immo.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+ <nav class="navbar">  <!--Elle sert uniquement à contenir les liens principaux qui permettent de naviguer sur le site (les menus).*/-->
+        <div class="navbar_container">
+            <a href="Immo.html" class="navbar_logo"><img src="logo.png"></a>
+            <button class="navbar_toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="navbar_menu">
+                <li><a href="Immo.html">Acceuil</a></li>    <!-- class="acitve"*/-->
+                <li><a href="acheter.html">Vente</a></li>
+                <li><a href="alouer.html">Location</a></li>
+                <li><a href="propre.html">Propriétaire</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">Á propos</a></li>
+            </ul>
+        </div>
+    </nav>
+ 
+    <div class="container">
+
+    <div class="form-box">
+
+        <div class="title">
+
+            <h1>
+                <i class="fa-solid fa-house-circle-check"></i>
+                Ajouter un nouveau bien
+            </h1>
+
+            <p>
+                Remplissez les informations de votre bien immobilier.
+            </p>
+
+        </div>
+
+        <form action="#" method="post" enctype="multipart/form-data">
+
+            <!-- ================= Informations Générales ================= -->
+
+            <div class="section">
+
+                <h2>Informations générales</h2>
+
+                <div class="input-group">
+
+                    <label for="titre">Titre du bien</label>
+
+                    <input
+                        type="text"
+                        id="titre"
+                        name="titre"
+                        placeholder="Ex : Villa Moderne avec Piscine"
+                        required>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label for="description">Description</label>
+
+                    <textarea
+                        id="description"
+                        name="description"
+                        rows="5"
+                        placeholder="Décrivez votre bien..."
+                        required></textarea>
+
+                </div>
+
+            </div>
+
+            <!-- ================= Localisation ================= -->
+
+            <div class="section">
+
+                <h2>Localisation</h2>
+
+                <div class="row">
+
+                    <div class="input-group">
+
+                        <label for="ville">Ville</label>
+
+                        <select id="ville" name="ville">
+
+                            <option value="">Choisir une ville</option>
+                            <option>Agadir</option>
+                            <option>Casablanca</option>
+                            <option>Marrakech</option>
+                            <option>Rabat</option>
+                            <option>Tanger</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label for="adresse">Adresse</label>
+
+                        <input
+                            type="text"
+                            id="adresse"
+                            name="adresse"
+                            placeholder="Adresse complète">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ================= Caractéristiques ================= -->
+
+            <div class="section">
+
+                <h2>Caractéristiques</h2>
+
+                <div class="row">
+
+                    <div class="input-group">
+
+                        <label for="type">Type du bien</label>
+
+                        <select id="type" name="type">
+
+                            <option>Appartement</option>
+                            <option>Villa</option>
+                            <option>Maison</option>
+                            <option>Bureau</option>
+                            <option>Terrain</option>
+                            
+
+                        </select>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label for="transaction">Transaction</label>
+
+                        <select id="transaction" name="transaction">
+
+                            <option>Vente</option>
+                            <option>Location</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="input-group">
+
+                        <label for="prix">Prix (DH)</label>
+
+                        <input
+                            type="number"
+                            id="prix"
+                            name="prix"
+                            placeholder="0">
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label for="surface">Surface (m²)</label>
+
+                        <input
+                            type="number"
+                            id="surface"
+                            name="surface"
+                            placeholder="0">
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="input-group">
+
+                        <label for="chambres">Nombre de chambres</label>
+
+                        <input
+                            type="number"
+                            id="chambres"
+                            name="chambres"
+                            min="0">
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label for="bains">Salles de bain</label>
+
+                        <input
+                            type="number"
+                            id="bains"
+                            name="bains"
+                            min="0">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ================= Équipements ================= -->
+
+            <div class="section">
+
+                <h2>Équipements</h2>
+
+                <div class="equipements">
+
+                    <label><input type="checkbox" name="equipements[]" value="Garage"> Garage</label>
+
+                    <label><input type="checkbox" name="equipements[]" value="Piscine"> Piscine</label>
+
+                    <label><input type="checkbox" name="equipements[]" value="Jardin"> Jardin</label>
+
+                    <label><input type="checkbox" name="equipements[]" value="Terrasse"> Terrasse</label>
+
+                    <label><input type="checkbox" name="equipements[]" value="Ascenseur"> Ascenseur</label>
+
+                    <label><input type="checkbox" name="equipements[]" value="Climatisation"> Climatisation</label>
+
+                </div>
+
+            </div>
+
+            <!-- ================= Photos ================= -->
+
+            <div class="section">
+
+                <h2>Photos du bien</h2>
+
+                <div class="upload-box">
+
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+
+                    <p>Ajoutez plusieurs photos</p>
+
+                    <input
+                        type="file"
+                        name="photos[]"
+                        multiple
+                        accept="image/*">
+
+                </div>
+
+            </div>
+
+            <!-- ================= Vidéo ================= -->
+
+            <div class="section">
+
+                <h2>Vidéo (Optionnelle)</h2>
+
+                <input
+                    type="file"
+                    name="video"
+                    accept="video/*">
+
+            </div>
+
+            <!-- ================= Boutons ================= -->
+
+            <div class="buttons">
+
+                <a href="owner.html" class="cancel">
+                    Annuler
+                </a>
+
+                <button type="submit">
+
+                    <i class="fa-solid fa-paper-plane"></i>
+
+                    Publier le bien
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+<footer class="footer">
+    <div class="footer-container">
+        <!-- ABOUT -->
+        <div class="footer-box">
+            <a href="Immo.html" class="navbar_logo"><img src="logo.png"></a>
+
+            <p>
+                Votre partenaire de confiance pour acheter,
+                vendre et louer des biens immobiliers partout au Maroc.
+            </p>
+
+        </div>
+        <!-- NAVIGATION -->
+        <div class="footer-box">
+            <h3>Navigation</h3>
+
+            <ul>
+                <li>
+                    <a href="Immo.html">Accueil</a>
+                </li>
+                <li>
+                    <a href="acheter.html">Vente</a>
+                </li>
+                <li>
+                    <a href="louer.html">Location</a>
+                </li>
+                <li>
+                    <a href="propre.html">Propriétaire</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="about.html">Àpropos</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- CONTACT -->
+        <div class="footer-box">
+            <h3>Contact</h3>
+            <div class="contact-links">
+                <a href="https://maps.google.com/?q=Rue+Hay+Ryad+Agadir" target="_blank">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Rue Hay Ryad, Agadir</span>
+                </a>
+
+                <a href="tel:+212600001111">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+212 600 00 11 11</span>
+                </a>
+
+                <a href="mailto:contact@tigmiⵎⵇⵓⵔⵏ.ma">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>contact@tigmiⵎⵇⵓⵔⵏ.ma</span>
+                </a>
+            </div>
+
+        </div>
+        <!-- SOCIAL -->
+        <div class="footer-box">
+            <h3>Suivez-nous</h3>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="https://instagram.com" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://wa.me/212600001111" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a href="https://linkedin.com" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>
+            © 2026 <span>TIGMI ⵎⵇⵓⵔⵏ</span> | Tous droits réservés.
+        </p>
+    </div>
+</footer>
+<script src="Immo.js"></script>
+</body>
+</html>
